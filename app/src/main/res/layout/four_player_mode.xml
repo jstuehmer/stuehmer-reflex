@@ -1,40 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:weightSum="3"
-    tools:context="com.example.stuehmer.stuehmer_reflex.PlayersSelectActivity" >
+    android:weightSum="4" >
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textSize="30sp"
-        android:text="@string/two_players"
-        android:id="@+id/two_player_select"
-        android:onClick="startTwoPlayer" />
+        android:text="@string/player_one"
+        android:id="@+id/player1of4" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textSize="30sp"
-        android:text="@string/three_players"
-        android:id="@+id/three_player_select"
-        android:onClick="startThreePlayer" />
+        android:text="@string/player_two"
+        android:id="@+id/player2of4" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textSize="30sp"
-        android:text="@string/four_players"
-        android:id="@+id/four_player_select"
-        android:onClick="startFourPlayer"/>
+        android:text="@string/player_three"
+        android:id="@+id/player3of4" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:text="@string/player_four"
+        android:id="@+id/player4of4" />
+
+
 
 </LinearLayout>

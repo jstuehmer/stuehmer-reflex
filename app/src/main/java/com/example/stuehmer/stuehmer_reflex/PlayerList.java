@@ -16,6 +16,6 @@ public class PlayerList {
     }
 
     public void addPlayer(Player player) {
-        playerList.add(player);
+        this.playerList.add(player);
     }
 }

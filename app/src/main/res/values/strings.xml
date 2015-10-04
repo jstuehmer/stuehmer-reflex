@@ -7,7 +7,7 @@
     <string name="statistics">Reaction Time Statistics</string>
     <string name="title_activity_gameshow_buzzer">GameshowBuzzerActivity</string>
     <string name="reaction_timer">Reaction Timer</string>
-    <string name="description">The timer waits between 10ms and 2000ms before prompting you
+    <string name="description">Click Begin when you are ready. The timer waits between 10ms and 2000ms before prompting you
         to click. When the wait is over you will be told to click. Your reaction time will
         then be recorded and displayed.</string>
     <string name="begin">Begin</string>
@@ -21,4 +21,11 @@
     <string name="title_activity_statistics">StatisticsActivity</string>
     <string name="title_activity_buzzer_counts">BuzzerCountsActivity</string>
     <string name="title_activity_players_select">PlayersSelectActivity</string>
+    <string name="two_players">2 Players</string>
+    <string name="three_players">3 Players</string>
+    <string name="four_players">4 Players</string>
+    <string name="player_one">Player 1</string>
+    <string name="player_two">Player 2</string>
+    <string name="player_three">Player 3</string>
+    <string name="player_four">Player 4</string>
 </resources>
