@@ -1,0 +1,3 @@
+http://stackoverflow.com/questions/2614719/how-do-i-get-the-sharedpreferences-from-a-preferenceactivity-in-android
+http://stackoverflow.com/questions/18284526/android-use-handler-post-delayed-twice
+http://code.hammerpig.com/simple-compute-median-java.html

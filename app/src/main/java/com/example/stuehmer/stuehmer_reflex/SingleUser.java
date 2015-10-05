@@ -61,6 +61,7 @@ public class SingleUser extends Player {
     }
 
     // return the median time
+    // http://code.hammerpig.com/simple-compute-median-java.html
     public double medianTime() {
         ArrayList<Integer> sortedTimes = this.reactionTimes;
         Collections.sort(sortedTimes);

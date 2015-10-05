@@ -46,10 +46,11 @@ public class SingleUserActivity extends AppCompatActivity {
         super.onStart();
 
         // Thanks to Pentium10 for the idea/implementation for this
-        // http://http://stackoverflow.com/questions/2614719/how-do-i-get-the-sharedpreferences-from-a-preferenceactivity-in-android
+        // http://stackoverflow.com/questions/2614719/how-do-i-get-the-sharedpreferences-from-a-preferenceactivity-in-android
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         boolean previouslyStarted = prefs.getBoolean(getString(R.string.previously_started), false);
 
+        // only show dialog box if it is first time using the app
         if (!previouslyStarted) {
             SharedPreferences.Editor edit = prefs.edit();
             edit.putBoolean(getString(R.string.previously_started), Boolean.TRUE);
@@ -73,6 +74,8 @@ public class SingleUserActivity extends AppCompatActivity {
         final Button buzzer = (Button) findViewById(R.id.buzzer);
         buzzer.setText("");
 
+        // Thanks to msh for the idea/implementation for this
+        // http://stackoverflow.com/questions/18284526/android-use-handler-post-delayed-twice
         new Handler().postDelayed(new Runnable() {
             public void run() {
                 buzzer.setText(getText(R.string.click));
