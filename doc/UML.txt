@@ -1,0 +1,8 @@
+The player class isa superclass of SingleUser and GameshowPlayer
+A player has a name constructor and a getter to return the name.
+
+SingleUser overrides (extends)  Player.
+It contains methods for returning different statistics from an ArrayList.
+
+GameshowPlayer isa Player with methods for increasing and returning buzzer count.
+GameshowPlayerList has a list of GameshowPlayers. 
