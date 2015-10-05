@@ -11,11 +11,19 @@ public class PlayerList {
         this.playerList = new ArrayList<Player>();
     }
 
-    public Collection<Player> getPlayers() {
+    public Collection<Player> getPlayers() throws EmptyPlayerListException {
+        int size = playerList.size();
+        if (size <= 0) {
+            throw new EmptyPlayerListException();
+        }
         return this.playerList;
     }
 
     public void addPlayer(Player player) {
         this.playerList.add(player);
+    }
+
+    public int size() {
+        return this.playerList.size();
     }
 }

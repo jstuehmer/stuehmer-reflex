@@ -15,20 +15,17 @@ public class PlayersSelectActivity extends AppCompatActivity {
     }
 
     public void startTwoPlayer(View view) {
-        Intent intent = new Intent(PlayersSelectActivity.this, GameshowBuzzerActivity.class);
-        intent.putExtra("numOfPlayers", 2);
+        Intent intent = new Intent(PlayersSelectActivity.this, TwoGameshowBuzzerActivity.class);
         startActivity(intent);
     }
 
     public void startThreePlayer(View view) {
-        Intent intent = new Intent(PlayersSelectActivity.this, GameshowBuzzerActivity.class);
-        intent.putExtra("numOfPlayers", 3);
+        Intent intent = new Intent(PlayersSelectActivity.this, ThreeGameShowBuzzerActivity.class);
         startActivity(intent);
     }
 
     public void startFourPlayer(View view) {
-        Intent intent = new Intent(PlayersSelectActivity.this, GameshowBuzzerActivity.class);
-        intent.putExtra("numOfPlayers", 4);
+        Intent intent = new Intent(PlayersSelectActivity.this, FourGameshowBuzzerActivity.class);
         startActivity(intent);
     }
 }

@@ -15,7 +15,8 @@
         android:layout_weight="1"
         android:textSize="30sp"
         android:text="@string/player_one"
-        android:id="@+id/player1of2" />
+        android:id="@+id/player1of2"
+        android:onClick="increase1of2"/>
 
     <Button
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
         android:layout_weight="1"
         android:textSize="30sp"
         android:text="@string/player_two"
-        android:id="@+id/player2of2" />
+        android:id="@+id/player2of2"
+        android:onClick="increase2of2" />
 
 </LinearLayout>

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">stuehmer-reflex</string>
-    <string name="title_activity_single_user">SingleUserActivity</string>
     <string name="action_settings">Settings</string>
     <string name="single_user">Single User Mode</string>
     <string name="gameshow_buzzer">Gameshow Buzzer Mode</string>
@@ -17,7 +16,6 @@
     <string name="wait_message">Wait until the button says to click.</string>
     <string name="play_again">Click OK to play again.</string>
     <string name="buzzer_counts">Buzzer Counts</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_statistics">StatisticsActivity</string>
     <string name="title_activity_buzzer_counts">BuzzerCountsActivity</string>
     <string name="title_activity_players_select">PlayersSelectActivity</string>
@@ -28,4 +26,8 @@
     <string name="player_two">Player 2</string>
     <string name="player_three">Player 3</string>
     <string name="player_four">Player 4</string>
+    <string name="title_activity_three_game_show_buzzer">ThreeGameShowBuzzerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_four_gameshow_buzzer">FourGameshowBuzzerActivity</string>
 </resources>

@@ -18,13 +18,19 @@
         </activity>
         <activity android:name=".SingleUserActivity" >
         </activity>
-        <activity android:name=".GameshowBuzzerActivity" >
+        <activity android:name=".TwoGameshowBuzzerActivity" >
         </activity>
         <activity android:name=".StatisticsActivity" >
         </activity>
         <activity android:name=".BuzzerCountsActivity" >
         </activity>
         <activity android:name=".PlayersSelectActivity" >
+        </activity>
+        <activity android:name=".PlayerCountsActivity" >
+        </activity>
+        <activity android:name=".ThreeGameShowBuzzerActivity" >
+        </activity>
+        <activity android:name=".FourGameshowBuzzerActivity">
         </activity>
     </application>
 

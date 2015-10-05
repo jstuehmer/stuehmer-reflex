@@ -1,11 +1,11 @@
 package com.example.stuehmer.stuehmer_reflex;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
-public class BuzzerCountsActivity extends ActionBarActivity {
+public class BuzzerCountsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,4 +13,20 @@ public class BuzzerCountsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_buzzer_counts);
     }
 
+    public void showTwoPlayer(View view) {
+        Intent intent = new Intent(BuzzerCountsActivity.this, PlayerCountsActivity.class);
+        startActivity(intent);
+    }
+
+    public void showThreePlayer(View view) {
+        Intent intent = new Intent(BuzzerCountsActivity.this, PlayerCountsActivity.class);
+        intent.putExtra("numOfPlayers", 3);
+        startActivity(intent);
+    }
+
+    public void showFourPlayer(View view) {
+        Intent intent = new Intent(BuzzerCountsActivity.this, PlayerCountsActivity.class);
+        intent.putExtra("numOfPlayers", 4);
+        startActivity(intent);
+    }
 }
