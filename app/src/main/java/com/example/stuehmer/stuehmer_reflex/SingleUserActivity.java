@@ -16,6 +16,7 @@ import java.util.Random;
 public class SingleUserActivity extends AppCompatActivity {
 
     private Random rand = new Random();
+    static SingleUser singleUser = new SingleUser("Single User");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,7 @@ public class SingleUserActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final long endTime = System.currentTimeMillis();
                 int waitTime = (int) (endTime - startTime);
+                int reactionTime = waitTime - randomTime;
 
                 if (waitTime <= randomTime) {
                     AlertDialog alertDialog = new AlertDialog.Builder(SingleUserActivity.this).create();
@@ -75,8 +77,9 @@ public class SingleUserActivity extends AppCompatActivity {
                     alertDialog.show();
                 }
                 else {
+                    singleUser.addTime(reactionTime);
                     AlertDialog alertDialog = new AlertDialog.Builder(SingleUserActivity.this).create();
-                    alertDialog.setTitle(Integer.toString(waitTime - randomTime) + " ms");
+                    alertDialog.setTitle(Integer.toString(reactionTime) + " ms");
                     alertDialog.setMessage(getString(R.string.play_again));
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {

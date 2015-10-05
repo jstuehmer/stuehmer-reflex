@@ -15,5 +15,4 @@ public class GameshowPlayer extends Player {
     public void increaseBuzzerCount() {
         this.buzzerCount += 1;
     }
-
 }

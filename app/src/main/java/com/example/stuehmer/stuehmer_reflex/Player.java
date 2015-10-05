@@ -1,6 +1,7 @@
 package com.example.stuehmer.stuehmer_reflex;
 
 public class Player {
+
     protected String playerName;
 
     public Player(String playerName) {
